@@ -5,7 +5,13 @@ from pyrob.api import *
 
 @task
 def task_7_6():
-    pass
+    t=0
+
+    while t != 5:
+        if cell_is_filled():
+            t+=1
+        if t != 5:
+            move_right(1)
 
 
 if __name__ == '__main__':
