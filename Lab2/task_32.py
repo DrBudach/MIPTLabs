@@ -6,7 +6,6 @@ from pyrob.api import *
 @task(delay=0.01)
 def task_8_18():
     mem = 0
-    #ax = 0
     while not wall_is_on_the_right():
         while not wall_is_above():
             move_up(1)
